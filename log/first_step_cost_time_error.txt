@@ -1,0 +1,73 @@
+Step 6: Start solve problem.
+<Order> ordering all vertices cost 0.56554 ms
+this->ComputeResidual() cost 7.11965
+this->ComputeJacobians() cost 1.78198
+<LM Begin> origin sum cost r.T * S * r is 143.539
+this->ConstructIncrementalFunction() cost 6.59868
+this->LM_Initialize() cost 0.000908
+this->LM_SolveIncrementalFunction() cost 2.6481
+this->Update() cost 0.018097
+this->ComputeResidual() cost 0.10906
+this->LM_IsValidStep() cost 0.000894
+<LM Iter 0 / 30> cost 2.04975, dx 14.6964, lambda 9.93678e-05, rho 0.592454, time cost 18.4884 ms
+this->ComputeJacobians() cost 0.099725
+this->ConstructIncrementalFunction() cost 0.56422
+<LM Stop> solving cost time up to threshold, finished.
+<LM End> final sum cost r.T * S * r is 2.04975
+<Finish> Problem solve totally cost 19.2429 ms
+
+
+
+
+Step 6: Start solve problem.
+<Order> ordering all vertices cost 0.121119 ms
+this->ComputeResidual() cost 0.646795
+this->ComputeJacobians() cost 0.120125
+<LM Begin> origin sum cost r.T * S * r is 143.539
+this->ConstructIncrementalFunction() cost 1.45017
+this->LM_Initialize() cost 0.000235
+this->LM_SolveIncrementalFunction() cost 0.462274
+this->Update() cost 0.01365
+this->ComputeResidual() cost 0.097052
+this->LM_IsValidStep() cost 0.000869
+<LM Iter 0 / 30> cost 2.04976, dx 14.6964, lambda 9.93678e-05, rho 0.592454, time cost 2.82844 ms
+this->ComputeJacobians() cost 0.083254
+this->ConstructIncrementalFunction() cost 0.930527
+this->LM_SolveIncrementalFunction() cost 0.494539
+this->Update() cost 0.015679
+this->ComputeResidual() cost 0.117223
+this->LM_IsValidStep() cost 0.000983
+<LM Iter 1 / 30> cost 0.00946086, dx 2.53613, lambda 9.93678e-05, rho 0.501136, time cost 1.68253 ms
+this->ComputeJacobians() cost 0.093745
+this->ConstructIncrementalFunction() cost 0.737707
+this->LM_SolveIncrementalFunction() cost 0.409802
+this->Update() cost 0.012006
+this->ComputeResidual() cost 0.096733
+this->LM_IsValidStep() cost 0.000859
+<LM Iter 2 / 30> cost 0.00509028, dx 0.22603, lambda 9.93678e-05, rho 0.499561, time cost 1.39132 ms
+this->ComputeJacobians() cost 0.080999
+this->ConstructIncrementalFunction() cost 0.578224
+this->LM_SolveIncrementalFunction() cost 0.453541
+this->Update() cost 0.010513
+this->ComputeResidual() cost 0.141995
+this->LM_IsValidStep() cost 0.000957
+<LM Iter 3 / 30> cost 0.00508682, dx 0.0501579, lambda 3.31226e-05, rho 1.05164, time cost 1.29541 ms
+this->ComputeJacobians() cost 0.08478
+this->ConstructIncrementalFunction() cost 0.494267
+this->LM_SolveIncrementalFunction() cost 0.371004
+this->Update() cost 0.011803
+this->ComputeResidual() cost 0.303025
+this->LM_IsValidStep() cost 0.001745
+<LM Iter 4 / 30> cost 0.00508676, dx 0.026126, lambda 6.09635e-05, rho 0.0281293, time cost 1.4188 ms
+this->ComputeJacobians() cost 0.734836
+this->ConstructIncrementalFunction() cost 0.610532
+this->LM_SolveIncrementalFunction() cost 0.474918
+this->Update() cost 0.012674
+this->ComputeResidual() cost 0.19756
+this->LM_IsValidStep() cost 0.001434
+<LM Iter 5 / 30> cost 0.00508659, dx 0.00396618, lambda 9.48182e-05, rho 0.089021, time cost 2.09152 ms
+this->ComputeJacobians() cost 0.135346
+this->ConstructIncrementalFunction() cost 0.567091
+<LM Stop> solving cost time up to threshold, finished.
+<LM End> final sum cost r.T * S * r is 0.00508659
+<Finish> Problem solve totally cost 11.4758 ms

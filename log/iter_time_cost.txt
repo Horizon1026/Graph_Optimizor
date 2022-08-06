@@ -1,0 +1,300 @@
+## Problem Scale : 10 cameras, 300 landmarks, use float
+
+# without tbb and refine, use lm policy3
+<Order> ordering all vertices cost 0.032082 ms
+this->ComputeResidual() cost 0.730495
+this->ConstructIncrementalFunction() cost 3.90671
+this->LM_Initialize() cost 0.00018
+this->LM_SolveIncrementalFunction() cost 13.2217
+this->Update() cost 0.095496
+this->ComputeResidual() cost 0.505792
+this->LM_IsValidStep() cost 0.005324
+<LM Iter 0 / 30> cost 0.0109983, dx 14.7393, lambda 3.33333e-05, rho 3.13649, time cost 18.5206 ms
+this->ComputeResidual() cost 0.523448
+this->ConstructIncrementalFunction() cost 2.74672
+this->LM_SolveIncrementalFunction() cost 12.9207
+this->Update() cost 0.100193
+this->ComputeResidual() cost 0.639318
+this->LM_IsValidStep() cost 0.001579
+<LM Iter 1 / 30> cost 0.000977968, dx 3.61799, lambda 1.11111e-05, rho 18.5832, time cost 16.9779 ms
+this->ComputeResidual() cost 0.52235
+this->ConstructIncrementalFunction() cost 2.49842
+this->LM_SolveIncrementalFunction() cost 11.1037
+this->Update() cost 0.106871
+this->ComputeResidual() cost 0.703575
+this->LM_IsValidStep() cost 0.001999
+<LM Iter 2 / 30> cost 0.000579151, dx 0.416573, lambda 3.7037e-06, rho 142.919, time cost 14.9702 ms
+this->ComputeResidual() cost 0.774154
+this->ConstructIncrementalFunction() cost 2.98576
+this->LM_SolveIncrementalFunction() cost 12.6825
+this->Update() cost 0.067945
+this->ComputeResidual() cost 0.551974
+this->LM_IsValidStep() cost 0.001732
+<LM Iter 3 / 30> cost 0.000578894, dx 0.0187263, lambda 1.23457e-06, rho 297.44, time cost 17.0801 ms
+this->ComputeResidual() cost 0.458647
+this->ConstructIncrementalFunction() cost 2.56529
+this->LM_SolveIncrementalFunction() cost 11.3722
+this->Update() cost 0.06473
+this->ComputeResidual() cost 0.482902
+this->LM_IsValidStep() cost 0.001736
+<LM Iter 4 / 30> cost 0.000578892, dx 0.000415731, lambda 4.11523e-07, rho 8.34433, time cost 14.9782 ms
+this->ComputeResidual() cost 0.447868
+this->ConstructIncrementalFunction() cost 2.37535
+this->LM_SolveIncrementalFunction() cost 11.5607
+this->Update() cost 0.064736
+this->ComputeResidual() cost 0.474052
+this->LM_IsValidStep() cost 0.000704
+<LM Iter 5 / 30> cost 0.000578893, dx 1.37571e-05, lambda 8.23045e-07, rho -2.86101, time cost 14.9517 ms
+this->BackSubstitution() cost 0.02408
+this->LM_SolveIncrementalFunction() cost 11.1353
+this->Update() cost 0.060295
+this->ComputeResidual() cost 0.478735
+<LM End> min cost holding times up to threshold, finished.
+<Finish> Problem solve totally cost 109.226 ms
+
+
+# without tbb and refine, use dogleg
+<Order> ordering all vertices cost 0.054746 ms
+this->ComputeResidual() cost 0.750978
+this->ConstructIncrementalFunction() cost 4.11472
+this->DogLeg_Initialize() cost 0.006029
+this->DogLeg_SolveIncrementalFunction() cost 13.0987
+this->Update() cost 0.093311
+this->ComputeResidual() cost 0.61202
+this->DogLeg_IsValidStep() cost 0.209235
+<DogLeg Iter 0 / 30> cost 0.0110186, dx 14.775, radius 1138.38, rho 1.04529, alpha 0.00124232, time cost 18.9582 ms
+this->ComputeResidual() cost 0.862926
+this->ConstructIncrementalFunction() cost 2.58452
+this->DogLeg_SolveIncrementalFunction() cost 12.6264
+this->Update() cost 0.116398
+this->ComputeResidual() cost 0.80494
+this->DogLeg_IsValidStep() cost 0.194323
+<DogLeg Iter 1 / 30> cost 0.000995391, dx 3.69823, radius 1138.38, rho 6.18713, alpha 0.00138884, time cost 17.2199 ms
+this->ComputeResidual() cost 0.531118
+this->ConstructIncrementalFunction() cost 2.7753
+this->DogLeg_SolveIncrementalFunction() cost 13.3577
+this->Update() cost 0.141761
+this->ComputeResidual() cost 1.11826
+this->DogLeg_IsValidStep() cost 0.397365
+<DogLeg Iter 2 / 30> cost 0.000579147, dx 0.396961, radius 1138.38, rho 47.8152, alpha 0.00133273, time cost 18.3704 ms
+this->ComputeResidual() cost 0.903355
+this->ConstructIncrementalFunction() cost 2.90722
+this->DogLeg_SolveIncrementalFunction() cost 13.0258
+this->Update() cost 0.119009
+this->ComputeResidual() cost 0.661737
+this->DogLeg_IsValidStep() cost 0.32772
+<DogLeg Iter 3 / 30> cost 0.000578893, dx 0.00899536, radius 1138.38, rho 69.8069, alpha 0.00140187, time cost 18.0236 ms
+this->ComputeResidual() cost 0.640942
+this->ConstructIncrementalFunction() cost 2.67481
+this->DogLeg_SolveIncrementalFunction() cost 10.1061
+this->Update() cost 0.084349
+this->ComputeResidual() cost 0.65103
+this->DogLeg_IsValidStep() cost 0.325697
+<DogLeg Iter 4 / 30> cost 0.000578894, dx 5.28567e-05, radius 284.595, rho -0.548358, alpha 0.00155247, time cost 14.5283 ms
+this->BackSubstitution() cost 0.0377
+this->DogLeg_SolveIncrementalFunction() cost 10.7092
+this->Update() cost 0.097257
+this->ComputeResidual() cost 0.689797
+<DogLeg End> min cost holding times up to threshold, finished.
+<Finish> Problem solve totally cost 98.681 ms
+
+
+# Refine : Copy matrix from H in this->MarginalizeIoslatedVertices
+<Order> ordering all vertices cost 0.036902 ms
+this->MarginalizeIoslatedVertices cost 7.68996
+this->SolveLinearFunction cost 4.135
+<LM Iter 0 / 30> cost 0.0109983, dx 14.7393, lambda 3.33333e-05, rho 3.13649, time cost 16.9953 ms
+this->MarginalizeIoslatedVertices cost 7.21399
+this->SolveLinearFunction cost 5.38232
+<LM Iter 1 / 30> cost 0.000977968, dx 3.61799, lambda 1.11111e-05, rho 18.5832, time cost 16.6209 ms
+this->MarginalizeIoslatedVertices cost 7.04267
+this->SolveLinearFunction cost 5.49878
+<LM Iter 2 / 30> cost 0.000579151, dx 0.416573, lambda 3.7037e-06, rho 142.919, time cost 17.4714 ms
+this->MarginalizeIoslatedVertices cost 7.689
+this->SolveLinearFunction cost 5.08163
+<LM Iter 3 / 30> cost 0.000578894, dx 0.0187263, lambda 1.23457e-06, rho 297.44, time cost 16.5152 ms
+this->MarginalizeIoslatedVertices cost 6.6332
+this->SolveLinearFunction cost 4.97699
+<LM Iter 4 / 30> cost 0.000578892, dx 0.000415731, lambda 4.11523e-07, rho 8.34433, time cost 15.5869 ms
+this->MarginalizeIoslatedVertices cost 6.54258
+this->SolveLinearFunction cost 4.94513
+<LM Iter 5 / 30> cost 0.000578893, dx 1.37571e-05, lambda 8.23045e-07, rho -2.86101, time cost 15.2848 ms
+this->MarginalizeIoslatedVertices cost 6.59269
+this->SolveLinearFunction cost 5.16452
+<LM End> min cost holding times up to threshold, finished.
+<Finish> Problem solve totally cost 111.087 ms
+
+
+# Refine : Do not copy matrix from H in this->MarginalizeIoslatedVertices
+<Order> ordering all vertices cost 0.035151 ms
+this->MarginalizeIoslatedVertices cost 6.59145
+this->SolveLinearFunction cost 4.89587
+<LM Iter 0 / 30> cost 0.0109983, dx 14.7393, lambda 3.33333e-05, rho 3.13649, time cost 16.8714 ms
+this->MarginalizeIoslatedVertices cost 5.12843
+this->SolveLinearFunction cost 4.87677
+<LM Iter 1 / 30> cost 0.000977968, dx 3.61799, lambda 1.11111e-05, rho 18.5832, time cost 14.0443 ms
+this->MarginalizeIoslatedVertices cost 5.0306
+this->SolveLinearFunction cost 5.4645
+<LM Iter 2 / 30> cost 0.000579151, dx 0.416573, lambda 3.7037e-06, rho 142.919, time cost 14.4161 ms
+this->MarginalizeIoslatedVertices cost 5.92579
+this->SolveLinearFunction cost 5.22314
+<LM Iter 3 / 30> cost 0.000578894, dx 0.0187263, lambda 1.23457e-06, rho 297.44, time cost 15.2275 ms
+this->MarginalizeIoslatedVertices cost 5.03048
+this->SolveLinearFunction cost 5.05302
+<LM Iter 4 / 30> cost 0.000578892, dx 0.000415731, lambda 4.11523e-07, rho 8.34433, time cost 14.2575 ms
+this->MarginalizeIoslatedVertices cost 4.97605
+this->SolveLinearFunction cost 4.95511
+<LM Iter 5 / 30> cost 0.000578893, dx 1.37571e-05, lambda 8.23045e-07, rho -2.86101, time cost 13.8738 ms
+this->MarginalizeIoslatedVertices cost 4.8762
+this->SolveLinearFunction cost 4.65192
+<LM End> min cost holding times up to threshold, finished.
+<Finish> Problem solve totally cost 98.9531 ms
+
+
+# Refine : use tbb::parallel_for to speed up, and delete repeated step on "ComputeResidual()"
+# method is lm policy3
+<Order> ordering all vertices cost 0.077857 ms
+this->ComputeResidual() cost 1.13381
+this->ComputeJacobians() cost 0.176252
+this->ConstructIncrementalFunction() cost 2.53196
+this->LM_Initialize() cost 0.000192
+this->LM_SolveIncrementalFunction() cost 10.333
+this->Update() cost 0.153491
+this->ComputeResidual() cost 0.119405
+this->LM_IsValidStep() cost 0.006245
+<LM Iter 0 / 30> cost 0.0219965, dx 14.7393, lambda 3.33333e-05, rho 3.13649, time cost 14.5154 ms
+this->ComputeJacobians() cost 0.146616
+this->ConstructIncrementalFunction() cost 1.74308
+this->LM_SolveIncrementalFunction() cost 10.3122
+this->Update() cost 0.067205
+this->ComputeResidual() cost 0.140272
+this->LM_IsValidStep() cost 0.002082
+<LM Iter 1 / 30> cost 0.00195594, dx 3.61799, lambda 1.11111e-05, rho 18.5832, time cost 12.4353 ms
+this->ComputeJacobians() cost 0.152042
+this->ConstructIncrementalFunction() cost 1.48461
+this->LM_SolveIncrementalFunction() cost 10.9433
+this->Update() cost 0.132696
+this->ComputeResidual() cost 0.128038
+this->LM_IsValidStep() cost 0.001724
+<LM Iter 2 / 30> cost 0.0011583, dx 0.416573, lambda 3.7037e-06, rho 142.919, time cost 12.8798 ms
+this->ComputeJacobians() cost 0.154492
+this->ConstructIncrementalFunction() cost 1.82685
+this->LM_SolveIncrementalFunction() cost 11.4626
+this->Update() cost 0.128584
+this->ComputeResidual() cost 0.133319
+this->LM_IsValidStep() cost 0.001905
+<LM Iter 3 / 30> cost 0.00115779, dx 0.0187263, lambda 1.23457e-06, rho 297.67, time cost 13.7355 ms
+this->ComputeJacobians() cost 0.285125
+this->ConstructIncrementalFunction() cost 1.78776
+this->LM_SolveIncrementalFunction() cost 11.0094
+this->Update() cost 0.045613
+this->ComputeResidual() cost 0.120784
+<LM End> cost down rate up to threshold, finished.
+<Finish> Problem solve totally cost 66.8902 ms
+
+# method is dogleg
+<Order> ordering all vertices cost 0.126859 ms
+this->ComputeResidual() cost 0.837218
+this->ComputeJacobians() cost 0.192522
+this->ConstructIncrementalFunction() cost 3.52555
+this->DogLeg_Initialize() cost 0.023067
+this->DogLeg_SolveIncrementalFunction() cost 12.7693
+this->Update() cost 0.173059
+this->ComputeResidual() cost 0.123564
+this->DogLeg_IsValidStep() cost 0.28884
+<DogLeg Iter 0 / 30> cost 0.0220372, dx 14.775, radius 10000, rho 1.04529, alpha 0.00124232, time cost 17.9967 ms
+this->ComputeJacobians() cost 0.230185
+this->ConstructIncrementalFunction() cost 1.52029
+this->DogLeg_SolveIncrementalFunction() cost 12.0181
+this->Update() cost 0.128313
+this->ComputeResidual() cost 0.125062
+this->DogLeg_IsValidStep() cost 0.298872
+<DogLeg Iter 1 / 30> cost 0.00199078, dx 3.69823, radius 10000, rho 6.18712, alpha 0.00138884, time cost 14.3365 ms
+this->ComputeJacobians() cost 0.279574
+this->ConstructIncrementalFunction() cost 1.46053
+this->DogLeg_SolveIncrementalFunction() cost 10.746
+this->Update() cost 0.102175
+this->ComputeResidual() cost 0.125048
+this->DogLeg_IsValidStep() cost 0.249932
+<DogLeg Iter 2 / 30> cost 0.00115829, dx 0.396961, radius 10000, rho 47.8152, alpha 0.00133273, time cost 12.9988 ms
+this->ComputeJacobians() cost 0.232197
+this->ConstructIncrementalFunction() cost 1.52103
+this->DogLeg_SolveIncrementalFunction() cost 9.8226
+this->Update() cost 0.068722
+this->ComputeResidual() cost 0.146032
+this->DogLeg_IsValidStep() cost 0.294128
+<DogLeg Iter 3 / 30> cost 0.00115779, dx 0.00899536, radius 10000, rho 69.7632, alpha 0.00140187, time cost 12.1609 ms
+this->ComputeJacobians() cost 0.437822
+this->ConstructIncrementalFunction() cost 1.71502
+this->DogLeg_SolveIncrementalFunction() cost 10.1519
+this->Update() cost 0.075087
+this->ComputeResidual() cost 0.115132
+this->DogLeg_IsValidStep() cost 0.241995
+<DogLeg Iter 4 / 30> cost 0.00115779, dx 5.28567e-05, radius 2500, rho -0.524516, alpha 0.00155247, time cost 12.7677 ms
+this->RollBack() cost 0.026473
+this->DogLeg_SolveIncrementalFunction() cost 10.6749
+this->Update() cost 0.10467
+this->ComputeResidual() cost 0.178678
+<DogLeg End> min cost holding times up to threshold, finished.
+<Finish> Problem solve totally cost 81.3267 ms
+
+
+# tbb on solving Hll * dxl = bl, using block diag matrix solving policy3Step 6: Start solve problem.
+<Order> ordering all vertices cost 0.207605 ms
+this->ComputeResidual() cost 0.901945
+this->ComputeJacobians() cost 0.117116
+this->ConstructIncrementalFunction() cost 2.343
+this->LM_Initialize() cost 0.00016
+this->LM_SolveIncrementalFunction() cost 0.543668
+this->Update() cost 0.012506
+this->ComputeResidual() cost 0.087959
+this->LM_IsValidStep() cost 0.001868
+<LM Iter 0 / 30> cost 3.23001, dx 14.7358, lambda 0.0001, rho 0.497013, time cost 4.05821 ms
+this->ComputeJacobians() cost 0.083845
+this->ConstructIncrementalFunction() cost 2.67381
+this->LM_SolveIncrementalFunction() cost 0.472152
+this->Update() cost 0.012235
+this->ComputeResidual() cost 0.082006
+this->LM_IsValidStep() cost 0.002005
+<LM Iter 1 / 30> cost 0.0213567, dx 3.57064, lambda 0.0001, rho 0.498152, time cost 3.36231 ms
+this->ComputeJacobians() cost 0.088548
+this->ConstructIncrementalFunction() cost 1.85423
+this->LM_SolveIncrementalFunction() cost 0.583469
+this->Update() cost 0.014156
+this->ComputeResidual() cost 0.213298
+this->LM_IsValidStep() cost 0.00143
+<LM Iter 2 / 30> cost 0.00509465, dx 0.412834, lambda 0.0001, rho 0.499853, time cost 2.77606 ms
+this->ComputeJacobians() cost 0.085864
+this->ConstructIncrementalFunction() cost 2.05238
+this->LM_SolveIncrementalFunction() cost 0.785685
+this->Update() cost 0.011046
+this->ComputeResidual() cost 0.090959
+this->LM_IsValidStep() cost 0.001865
+<LM Iter 3 / 30> cost 0.00509007, dx 0.0722536, lambda 0.00010126, rho 0.383653, time cost 3.16353 ms
+this->ComputeJacobians() cost 0.130412
+this->ConstructIncrementalFunction() cost 1.9519
+this->LM_SolveIncrementalFunction() cost 0.449092
+this->Update() cost 0.010815
+this->ComputeResidual() cost 0.093137
+this->LM_IsValidStep() cost 0.001385
+<LM Iter 4 / 30> cost 0.00509001, dx 0.0283548, lambda 0.0001873, rho 0.0264235, time cost 2.66958 ms
+this->ComputeJacobians() cost 0.088746
+this->ConstructIncrementalFunction() cost 1.69956
+this->LM_SolveIncrementalFunction() cost 0.624622
+this->Update() cost 0.010647
+this->ComputeResidual() cost 0.091947
+this->LM_IsValidStep() cost 0.001841
+<LM Iter 5 / 30> cost 0.00509, dx 0.00835573, lambda 0.000368752, rho 0.00525845, time cost 2.65934 ms
+this->ComputeJacobians() cost 0.27506
+this->ConstructIncrementalFunction() cost 1.78285
+this->LM_SolveIncrementalFunction() cost 0.522293
+this->Update() cost 0.013913
+this->ComputeResidual() cost 0.08685
+this->LM_IsValidStep() cost 0.000615
+<LM Iter 6 / 30> cost 0.00509001, dx 0.00297277, lambda 0.000737503, rho -0.00139102, time cost 2.71461 ms
+this->RollBack() cost 0.016906
+this->LM_SolveIncrementalFunction() cost 0.344805
+this->Update() cost 0.008082
+this->ComputeResidual() cost 0.079567
+<LM End> min cost holding times up to threshold, finished.
+<Finish> Problem solve totally cost 21.8864 ms
